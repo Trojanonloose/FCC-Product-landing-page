@@ -1,0 +1,261 @@
+/*font import*/
+
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
+
+/*CSS reset*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  line-height: 1.5;
+  background-color: #eee;
+}
+
+/*Header and navbar*/
+
+#header {
+  padding: 0 20px;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  background-color: #eee;
+  min-height: 75px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #000;
+}
+
+@media (max-width: 600px) {
+  header {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .logo {
+    margin: 10px 0 0 60px;
+  }
+  #nav-bar {
+    margin: 0.625rem 0 0.9rem 7rem;
+  }
+}
+
+.logo {
+  margin-top: 10px;
+  max-width: 60vw;
+}
+
+#header-img {
+  width: 100%;
+  height: 100%;
+  max-width: 300px;
+}
+
+#nav-bar {
+  width: 35vw;
+  margin-right: 35px;
+}
+
+#nav-bar ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  list-style: none;
+}
+
+@media (max-width: 700px) {
+  #nav-bar {
+    margin-top: 10px;
+    margin-right: 0;
+  }
+  #nav-bar ul {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+#nav-bar ul a {
+  color: #000;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+/*container*/
+
+.container {
+  top: 75px;
+  position: relative;
+}
+
+@media (max-width: 600px) {
+  .container {
+    top: 135px;
+  }
+}
+
+/*email search div*/
+
+.email-search-div {
+  padding-top: 20px;
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 15px;
+  font-size: 1.8rem;
+  font-weight: revert;
+}
+
+.email-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-control {
+  width: 275px;
+  margin-bottom: 15px;
+  padding: 6px;
+}
+
+/*features*/
+
+#features {
+  max-width: 1000px;
+  width: 100%;
+  margin: 50px auto;
+  padding: 0 50px;
+}
+
+.features {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: darkorange;
+  width: 20vw;
+  height: 125px;
+}
+
+@media (max-width: 550px) {
+  .icon {
+    display: none;
+  }
+  .features {
+    text-align: center;
+  }
+}
+
+.feature-content {
+  padding: 5px;
+  width: 80vw;
+}
+
+.feature-content > p {
+  font-weight: 500;
+}
+
+#how-it-works {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+#pricing {
+  margin: 50px auto;
+}
+
+.cards {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.box {
+  border: 1px solid black;
+  text-align: center;
+  margin: 10px;
+  min-width: 300px;
+  height: auto;
+  border-radius: 3px;
+}
+
+.box > ol {
+  list-style: none;
+  margin: 10px 0;
+}
+
+.box > p {
+  font-weight: 800;
+  margin: 10px 0;
+}
+
+.box > h3 {
+  background-color: #ddd;
+  padding: 5px 20px;
+  font-size: 1.5rem;
+}
+
+.box > button {
+  margin-bottom: 20px;
+}
+
+/*buttons*/
+
+.btn {
+  background-color: orange;
+  border: none;
+  margin: 15px;
+  padding: 15px 30px;
+  font-size: 1rem;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.btn:hover {
+  background-color: orangered;
+}
+
+/*footer*/
+
+footer {
+  background-color: #ddd;
+  padding: 20px;
+}
+
+footer > ul {
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+}
+
+footer ul li {
+  padding: 5px 10px;
+}
+
+footer ul li a {
+  color: black;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+span {
+  display: flex;
+  justify-content: flex-end;
+}
